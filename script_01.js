@@ -5,7 +5,7 @@ let ageJohn, ageMark;
 let isJohnOlder, isJohnEqual;
 
 // Assigment (Wertzuweisung)
-ageJohn = 25;
+ageJohn = 30;
 ageMark = 30;
 
 // Test | Logische Aussage
@@ -32,17 +32,37 @@ console.log("isJohnEqual: " + isJohnEqual);
 // mit Alternative  
 // entweder ja oder nein
 
-if (isJohnOlder) 
-{
-    // Ja-Zweig / true
-    console.log("John ist älter.");
-} 
-else 
-{
-    // Nein-Zweig / false
-    console.log("John ist jünger.");
-}
+// if (isJohnOlder) 
+// {
+//     // Ja-Zweig / true
+//     console.log("John ist älter.");
+// } 
+// else 
+// {
+//     // Nein-Zweig / false
+//     console.log("John ist jünger.");
+// }
 
 /************  Ternäre (ternary) Schreibweise ************/
-console.log( (isJohnOlder) ? "John is older" : "Mark is older");
+// console.log( (isJohnOlder) ? "John is older" : "Mark is older");
 
+/************ IF - ELSE IF  ************/
+// mit alternativen Fällen (älter,jünger,gleich alt)
+
+if (isJohnOlder) 
+// Ja-Zweig / true
+{
+    console.log("John ist älter.");
+}
+// 1. Alternative
+else if(isJohnEqual)
+{
+    console.log("John ist gleich alt.");
+}
+// ggf. weitere Alternativen ..
+
+// Nein-Zweig / false
+else 
+{
+    console.log("John ist jünger.");
+}
